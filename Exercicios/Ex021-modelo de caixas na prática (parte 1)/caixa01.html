@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Elemento do tipo box/block-level. 
+            
+            Da para modificar um elemento block-level ou inline com o comando 'display' e alterando para o que vc quer e misturar elementos de caixa como 'inline-block'
+            
+            */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*Primeiro valor é a largura, o segundo o tipo e o terceiro a cor*/
+            border: 10px solid darkcyan;
+
+            /*Segue a mesma direção de um relógio: cima, direita, baixo e esquerda. Se todas as direções forem iguais basta colocar apenas o primeiro valor, se colocar 2 valores o primeiro valor vai valer para cima e baixo e o segundo para esquerda e para direita*/
+            padding: 10px;
+
+            /*Segue a mesma direção de um relógio e caso queira centralizar no meio pode utilizar o comando 'auto' ou colocar a direção esquerda e direita como 'auto', podendo modificar o tamanho da margin de cima e de baixo */
+            margin: 20px 20px 40px 20px;
+
+            /*Primeiro valor é a largura, o segundo o tipo e o terceiro a cor*/
+            outline: 5px dashed rgb(243, 182, 108);
+          
+        }
+
+        a{ /*Elemento do tipo inline-level*/
+           border: 2px solid darkblue;
+
+           padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links</a> são exemplos de caixa inline-level. Vamos ver como isso funciona.</p>
+    
+</body>
+</html>
