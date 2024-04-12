@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam vero maiores sequi officia earum officiis, reprehenderit saepe enim, reiciendis quidem sint dolorem deleniti hic quisquam ab doloremque suscipit libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia commodi deleniti iure libero velit corrupti id, qui enim. Vel recusandae veritatis voluptatum aliquid architecto accusamus, dicta perferendis ab excepturi. </p>
+
+    <ul>
+        <li><a href="paginasextras/pag001.html" target="frame"> Primeira página</a></li>
+        <li><a href="paginasextras/pag002.html" target="frame"> Segunda página</a></li>
+        <li><a href="paginasextras/pag003.html" target="frame"> Terceira página</a></li> <!--Podemos abrir um link que aparecerá em um iframe, basta dar um 'name'  para o iframe e no parâmetro target da âncora colocar o nome do iframe-->
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam vero maiores sequi officia earum officiis, reprehenderit saepe enim, reiciendis quidem sint dolorem deleniti hic quisquam ab doloremque suscipit libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia commodi deleniti iure libero velit corrupti id, qui enim. Vel recusandae veritatis voluptatum aliquid architecto accusamus, dicta perferendis ab excepturi. </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam vero maiores sequi officia earum officiis, reprehenderit saepe enim, reiciendis quidem sint dolorem deleniti hic quisquam ab doloremque suscipit libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia commodi deleniti iure libero velit corrupti id, qui enim. Vel recusandae veritatis voluptatum aliquid architecto accusamus, dicta perferendis ab excepturi. </p>
+
+    <iframe id="tela" name="frame" src="paginasextras/pag001.html"> <!--Tem a tag srcdoc que permite colocar tags em html, porém tem que tomar cuidado pois é muito confuso e polui muito a tag, é um uso muito pontual, é melhor criar um arquivo separado e colocar no 'src' padrão-->
+        <p>Infelizmente seu navegador não é compátivel</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo perspiciatis ipsum odio nulla distinctio sapiente itaque molestias labore, praesentium placeat culpa quisquam vitae laborum omnis possimus rem cupiditate voluptatum sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde minima sunt qui eum officiis libero, incidunt facilis, rem quisquam perferendis in nemo, ipsum deleniti. Debitis reiciendis soluta perspiciatis nulla.</p>
+</body>
+</html>
