@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furmulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php"  autocomplete="off" method="post">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p> 
+        <p><input type="submit" value="Enviar"></p>
+
+        <!--Existem 2 tipos de métodos para envios de formulários. O primeiro método é o "GET" o padrão quando não configuramos nenhum método (método que coloca os dados do formulário na URL). E o método "POST" o método POST não deixa aparecer os dados digitados na URL. -->
+
+        <!--Você irá utilizar o método get normalmente quando os dados não são sensiveis, ou seja quando vcoê está pedindo o nome de alguém ou algo irrelevante e esse método pode ser compartilhado porém tem um limite de 3 mil bytes e não é possivel enviar arquivos, já o método post é quando queremos 'mais' proteção, quando queremos pedir senha, número de cartão coisa mais sensiveis e não pode ser compartilhado e não possui limite e pode enviar arquivos como foto. OBS: o método post não é 100% seguro pois não é codificado e para codificar precisa saber https-->
+
+       <!-- Para de fato encaminhar os dados do formulário para alguma linguagem, dentro da tag de abertura do formulário (<form>), temos que configurar o atributo " action " (por padrão esse atributo já vem embutido dentro da tag form)... Como valor desse atributo, devemos inserir o nome do script que vai receber os dados (ex: cadastro.php).-->
+        
+        <!-- Podemos tirar o auxilio que os navegadores dão ao preencher um formulário caso atrapalhe a vizualisação, basta colocar o parâmetro autocomplete e colocar 'off' para desligar ou 'on' para ligar-->
+
+        <!--A tag label serve para criar um vínculo entre a palavra que está se referindo ao input (caixa) ajudando os mecanismo de busca, o navegador a identificar o que cada caixa está significando-->
+        
+        <!--Sobre o parâmetro " name ", de certa maneira ele serve para identificar um elemento, assim como o parâmetro "id" faz...
+
+        De forma geral, pode-se dizer que:
+
+        ID: O id é importante para o browser (front-end), para a manipulação do DOM (arvore do documento), CSS e usado para criar o VÍNCULO entre a nossa label e o seu respectivo componente.
+
+        NAME: O name é importante para o servidor/linguagens de programação (back-end) e o HTML.
+
+        O name é principalmente usado para elementos do tipo input em forms, ou seja para campos de inserção de dados e é exatamente o name que identifica no servidor o campo.
+    
+        Vale lembrar que o valor do id deve ser único para cada documento, já o valor do name pode ocorrer mais de uma vez por documento. 
+
+        Obs: Como foi dito, o atributo name é muito usado na parte do servidor nas linguagens de programação, entretanto ele é mais útil especificamente para algumas linguagens, como o PHP por exemplo... Já para linguagens como o JavaScript, o id é mais utilizado, mesmo sendo para o servidor... (No JS até dá para identificar e puxar o campo usando o name, mas o id é o considerado padrão para a linguagem).-->
+
+    </form>
+</body>
+</html>

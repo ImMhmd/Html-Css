@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="19" placeholder="Digite seu nome" autocomplete="username">
+            <!--Podemos adicionar valores no imput como o "required" quando queremos falar que um campo é obrigatório ser preenchido, colocar letras mínimas e máximas com "minlength e maxlength", colocar "placeholder" para colocar uma mensagem dentro da caixa, mudar o tamanho do input com "size" e podemos modificar o "autocomplete" no próprio input para falar o que você quer autocompletar nesta caixa (username,new-password, sex etc), mas para isso o autocomplete precisa estar ligado no formulário, -->
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    
+</body>
+</html>
