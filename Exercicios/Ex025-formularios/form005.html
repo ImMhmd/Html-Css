@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label> <!--Se você deixar com nomes diferente você consegue marcar todos porém eles não irão desmarcar, para resolver isso basta colocar o mesmo "name!!" para todos, resolverá e apenas um será marcado. Botão de rádio só pode escolher uma das opções em cada grupo e precisam ter o mesmo NAME!!!! mas o id precisa ser diferente para que o label funcione corretamente-->
+
+            <!--Podemos também já deixar coisas marcadas com o comando "checked" em algum das duas tags assim quando o site abrir a opção já estará marcada-->
+        </fieldset>
+        <fieldset>
+            <legend>Esporte favortios</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>  <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </p>
+
+    </form>
+    
+</body>
+</html>
