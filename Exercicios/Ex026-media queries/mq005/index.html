@@ -13,6 +13,7 @@
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        
         <menu id="itens">
             <ul>
                 <li><a href="#">Esportes</a></li>
@@ -39,7 +40,7 @@
     <script>
 
         function mudouTamanho(){
-            if (windo.innerWidth >= 768){
+            if (window.innerWidth >= 768){
                 itens.style.displau = 'block'
             } else{
                 itens.style.display = 'none'
